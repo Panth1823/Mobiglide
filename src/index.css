@@ -246,6 +246,7 @@
   line-height: normal;
   letter-spacing: -0.32px;
 }
+
 .contact-form {
   background: var(--White, #fff);
   display: flex;
@@ -339,4 +340,18 @@ textarea {
 
 .submit-btn:hover {
   background: var(--Maroon-Primary, #621a0c);
+}
+
+.nav-main a {
+  text-decoration: none;
+}
+
+.our-services,
+.about-us,
+.contact-us-btn {
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
 }
