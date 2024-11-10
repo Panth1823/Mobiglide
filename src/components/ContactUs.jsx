@@ -1,81 +1,88 @@
 import React from "react";
 import Footer from "./Footer";
-
+import Lines from "../assets/Lines.jpg"
 const ContactUs = () => {
   return (
     <>
-      <form action="">
-        <div className="contact-form">
-          <div class="form-container">
-            <form action="#" method="post">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="first-name">
-                    First name <span>*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first-name"
-                    placeholder="Enter First Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="last-name">
-                    Last name <span>*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    name="last-name"
-                    placeholder="Enter Last Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="email">
-                  Email address <span>*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter Email Address"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="mobile">
-                  Mobile number <span>*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="mobile"
-                  name="mobile"
-                  placeholder="Enter Mobile Number"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="message">
-                  Message <span>*</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Type Here"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="submit-btn">
-                Submit
-              </button>
-            </form>
+      <div className="inquire-main">
+        <div className="inquire-container">
+          <div className="inquire-content">
+            <h1>Inquire Today!</h1>
+            <p>Contact us with your questions or project needs. Complete the form below, and we'll get back to you promptly.</p>
           </div>
         </div>
-      </form>
+        <img src={Lines} alt="" className="inquire-image" />
+      </div>
+      <div className="contact-form">
+        <div className="form-container">
+          <form action="#" method="post">
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="first-name">
+                  First name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter First Name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="last-name">
+                  Last name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">
+                Email address <span>*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email Address"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="mobile">
+                Mobile number <span>*</span>
+              </label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter Mobile Number"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">
+                Message <span>*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Type Here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" className="submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
       <div className="address-main">
         <div className="mail-us">
           <svg

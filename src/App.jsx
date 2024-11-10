@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import ContactUs from "./components/ContactUs";
 import Services from "./components/Services";
 import About from "./components/About";
-
 const App = () => {
   return (
     <>
