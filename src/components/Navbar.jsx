@@ -1,8 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/mobiglide-logo.svg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: sectionId } });
+    } else {
+      // If we're already on home page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <>
       <nav className="sticky-navbar">
@@ -13,12 +29,20 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="tabs">
-            <Link to="/services" className="our-services">
+            <div
+              onClick={() => scrollToSection('services')}
+              className="our-services"
+              style={{ cursor: 'pointer' }}
+            >
               Our Services
-            </Link>
-            <Link to="/about" className="about-us">
+            </div>
+            <div
+              onClick={() => scrollToSection('about')}
+              className="about-us"
+              style={{ cursor: 'pointer' }}
+            >
               About Us
-            </Link>
+            </div>
           </div>
           <Link to="/contact" className="contact-us-btn">
             Contact Us

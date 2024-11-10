@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import One from "../assets/1.png";
 import Two from "../assets/2.png";
@@ -13,7 +13,31 @@ import Services from "../assets/Services.png";
 import Cards from "../assets/Cards.png";
 import Banner from "../assets/Section.jpg";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 const Home = () => {
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    // Check if we have a section to scroll to
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        // Add a small delay to ensure the page is loaded
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <div className="banner-wrapper">
@@ -37,15 +61,19 @@ const Home = () => {
               <Link to="/contact" className="contact-us-btn light">
                 Contact Us
               </Link>
-              <Link to="/contact" className="contact-us-btn brown">
+              <div 
+                onClick={() => scrollToSection('services')} 
+                className="contact-us-btn brown"
+                style={{ cursor: 'pointer' }}
+              >
                 Our Service
-              </Link>
+              </div>
             </div>
           </div>
         </div>
         <img src={Banner} alt="Mobiglide Banner" />
       </div>
-      <div className="aboutUs">
+      <div className="aboutUs" id="about">
         <div className="industries-header choose">
           <div className="dot-container">
             <svg
@@ -96,7 +124,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="our-services-main">
+      <div className="our-services-main" id="services">
         <div className="industries-header choose">
           <div className="dot-container">
             <svg

@@ -217,9 +217,16 @@
 .address-main {
   display: flex;
   width: 100%;
-  padding: 40px 160px;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.address-cover {
+  width: 100%;
+  padding: 40px 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mail-us,
@@ -404,6 +411,7 @@ textarea {
   gap: 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .inquire-content h1 {
@@ -427,6 +435,7 @@ textarea {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.8px;
+  width: 80%;
 }
 
 .inquire-main {
@@ -842,4 +851,4 @@ textarea {
   flex-direction: column;
   gap: 16px;
   align-items: center;
-}       
+}
