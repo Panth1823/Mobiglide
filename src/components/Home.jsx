@@ -500,42 +500,8 @@ const Home = () => {
           <div className="card-main">
             <div className="resource-card">
               <div className="resouce-svg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <mask
-                    id="mask0_7_5748"
-                    style={{ maskType: "luminance" }}
-                    maskUnits="userSpaceOnUse"
-                    x="3"
-                    y="3"
-                    width="26"
-                    height="26"
-                  >
-                    <path
-                      d="M4 16C4 9.37333 9.37333 4 16 4C22.6267 4 28 9.37333 28 16C28 22.6267 22.6267 28 16 28C9.37333 28 4 22.6267 4 16Z"
-                      fill="white"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M10.6667 16L14.6667 20L21.3334 13.3333"
-                      stroke="black"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_7_5748)">
-                    <path d="M32 0H0V32H32V0Z" fill="#621A0C" />
-                  </g>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M30 30.9492H22V4.94922H30V30.9492ZM20 30.9492H12V12.9492H20V30.9492ZM10 30.9492H2V18.9492H10V30.9492Z" fill="#621A0C" />
                 </svg>
               </div>
               <div className="resource-content">
