@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
-import Lines from "../assets/Banner.webp"
+import Lines from "../assets/Banner.webp";
+import LinesHide from "../assets/LinesOne.jpeg";
+
 const ContactUs = () => {
   return (
     <>
@@ -11,7 +13,18 @@ const ContactUs = () => {
             <p>Contact us with your questions or project needs. Complete the form below, and we'll get back to you promptly.</p>
           </div>
         </div>
-        <img src={Lines} alt="Decorative lines pattern" className="inquire-image" />
+        <img
+          src={Lines}
+          alt="Decorative lines pattern for inquiry section"
+          className="inquire-image"
+          loading="lazy"
+        />
+        <img
+          src={LinesHide}
+          alt="Hidden decorative lines pattern"
+          className="inquire-image-hide"
+          loading="lazy"
+        />
       </div>
       <div className="contact-form">
         <div className="form-container">
@@ -84,7 +97,6 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="address-cover">
-
         <div className="address-main">
           <div className="mail-us">
             <svg

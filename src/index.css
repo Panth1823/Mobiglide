@@ -485,6 +485,16 @@ textarea {
   left: 0;
 }
 
+.inquire-image-hide {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .industries {
   display: flex;
   padding: 80px 160px;
@@ -1027,9 +1037,10 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-  .banner-heading h1{
+  .banner-heading h1 {
     font-size: 20px;
   }
+
   .industries-header.choose h1 {
     width: 100%;
   }
@@ -1394,7 +1405,7 @@ textarea {
     width: 100%;
     color: var(--Text-Black-Primary, #111);
     font-family: Inter;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1501,6 +1512,14 @@ textarea {
     align-self: stretch;
   }
 
+  .inquire-image {
+    display: none;
+  }
+
+  .inquire-image-hide {
+    display: flex;
+  }
+
   .inquire-content h1 {
     color: #111;
     font-family: Inter;
@@ -1515,12 +1534,12 @@ textarea {
     color: #606060;
     text-align: center;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.48px;
-    width: 100%;
+    width: 90%;
   }
 
   .inquire-content {
@@ -1626,11 +1645,5 @@ textarea {
 
   .mobile-only {
     display: flex;
-  }
-
-
-
-  .inquire-content p {
-    font-size: 14px;
   }
 }

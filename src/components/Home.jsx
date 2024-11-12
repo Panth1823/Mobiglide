@@ -28,11 +28,9 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Check if we have a section to scroll to
     if (location.state?.scrollTo) {
       const element = document.getElementById(location.state.scrollTo);
       if (element) {
-        // Add a small delay to ensure the page is loaded
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
         }, 100);
@@ -73,7 +71,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={Banner} alt="Mobiglide Banner" />
+        <img
+          src={Banner}
+          alt="Mobiglide Banner"
+          loading="lazy"
+        />
       </div>
       <div className="aboutUs" id="about">
         <div className="industries-header choose">
@@ -105,9 +107,18 @@ const Home = () => {
             <div className="values-title">OUR CORE VALUES:</div>
 
             <div className="values-cards-container">
-              <img src={Cards} alt="Core Values Cards" className="cards" />
-              <img src={CardsResponsive} alt="Core Values Cards" className="cards-responsive" />
-
+              <img
+                src={Cards}
+                alt="Core Values Cards"
+                className="cards"
+                loading="lazy"
+              />
+              <img
+                src={CardsResponsive}
+                alt="Core Values Cards Responsive"
+                className="cards-responsive"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="values-content">
@@ -153,7 +164,11 @@ const Home = () => {
           </p>
         </div>
         <div className="services-container">
-          <img src={Services} alt="IT Services Overview" />
+          <img
+            src={Services}
+            alt="IT Services Overview"
+            loading="lazy"
+          />
           <div className="top resource">
             <div className="industries-header top">
               <p>Our Efficient Engagement Models</p>
@@ -320,7 +335,11 @@ const Home = () => {
           <div className="industries-container">
             <div className="top chooseUs">
               <div className="industry-card chooseUs">
-                <img src={One} alt="Banking and Financial Services" />
+                <img
+                  src={One}
+                  alt="Banking and Financial Services"
+                  loading="lazy"
+                />
                 <div className="chooseUs-content">
                   <p>Skilled Resources</p>
                   <h1>
@@ -330,7 +349,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="industry-card chooseUs">
-                <img src={Two} alt="Healthcare Services" />
+                <img src={Two} alt="Healthcare Services" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Proven Recruitment Process</p>
                   <h1>
@@ -342,7 +361,7 @@ const Home = () => {
             </div>
             <div className="mid">
               <div className="industry-card chooseUs">
-                <img src={Four} alt="Manufacturing Industry" />
+                <img src={Four} alt="Manufacturing Industry" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Industry-Leading Deployment Times</p>
                   <h1>
@@ -352,7 +371,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="industry-card chooseUs">
-                <img src={Five} alt="Retail Industry" />
+                <img src={Five} alt="Retail Industry" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Dedicated Client Management</p>
                   <h1>
@@ -668,43 +687,43 @@ const Home = () => {
         <div className="industries-container">
           <div className="top">
             <div className="industry-card">
-              <img src={One} alt="Banking and Financial Services" />
+              <img src={One} alt="Banking and Financial Services" loading="lazy" />
               <p>BFSI (Banking, Financial, Services & Insurance)</p>
             </div>
             <div className="industry-card">
-              <img src={Two} alt="Healthcare Services" />
+              <img src={Two} alt="Healthcare Services" loading="lazy" />
               <p>Healthcare</p>
             </div>
             <div className="industry-card">
-              <img src={Three} alt="Automobile Industry" />
+              <img src={Three} alt="Automobile Industry" loading="lazy" />
               <p>Automobile</p>
             </div>
           </div>
           <div className="mid">
             <div className="industry-card">
-              <img src={Four} alt="Manufacturing Industry" />
+              <img src={Four} alt="Manufacturing Industry" loading="lazy" />
               <p>Manufacturing</p>
             </div>
             <div className="industry-card">
-              <img src={Five} alt="Retail Industry" />
+              <img src={Five} alt="Retail Industry" loading="lazy" />
               <p>Retail</p>
             </div>
             <div className="industry-card">
-              <img src={Six} alt="Education Sector" />
+              <img src={Six} alt="Education Sector" loading="lazy" />
               <p>Education</p>
             </div>
           </div>
           <div className="btm">
             <div className="industry-card">
-              <img src={Seven} alt="E-Governance Services" />
+              <img src={Seven} alt="E-Governance Services" loading="lazy" />
               <p>E-Governance</p>
             </div>
             <div className="industry-card">
-              <img src={Eight} alt="Telecom Industry" />
+              <img src={Eight} alt="Telecom Industry" loading="lazy" />
               <p>Telecom</p>
             </div>
             <div className="industry-card hide">
-              <img src={Eight} alt="Telecom Industry" />
+              <img src={Eight} alt="Telecom Industry" loading="lazy" />
               <p>Telecom</p>
             </div>
           </div>

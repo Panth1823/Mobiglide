@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="nav-main">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="Mobiglide Logo" />
+              <img src={logo} alt="Mobiglide Logo" loading="lazy" />
             </Link>
           </div>
           <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
