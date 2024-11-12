@@ -6,11 +6,9 @@ const Footer = () => {
   const location = useLocation();
 
   const scrollToSection = (sectionId) => {
-    // If we're not on the home page, navigate there first
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: sectionId } });
     } else {
-      // If we're already on home page, just scroll
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });

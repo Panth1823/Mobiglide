@@ -422,14 +422,13 @@ textarea {
 .inquire-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
   position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 800px;
+  text-align: center;
 }
 
 .inquire-content {
@@ -467,18 +466,16 @@ textarea {
 
 .inquire-main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #fff;
-  position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .inquire-image {
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -964,6 +961,386 @@ textarea {
   height: auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .industries-header.choose h1 {
+    width: 100%;
+  }
+
+  .values-title-cards,
+  .values-container {
+    gap: 24px;
+  }
+
+
+  .industries-header.top.values h1 {
+    width: 100%;
+  }
+
+  .values-title {
+    color: var(--Maroon-Primary, #621A0C);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+
+  .values-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .aboutUs {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+
+  .card-main {
+    gap: 24px;
+  }
+
+  .our-services-main {
+    padding: 40px;
+  }
+
+  .industry-card img {
+    height: 306px;
+  }
+
+  .mid.industry {
+    gap: 24px;
+  }
+
+  .industries-container,
+  .top.chooseUs {
+    gap: 24px;
+  }
+
+  .industry-card p {
+    color: var(--Text-Black-Primary, #111);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+
+  .industry-card.chooseUs {
+    width: 100%;
+  }
+
+  .industries-header.choose p {
+    color: var(--Text-Black-text-black-300, #606060);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    width: 100%;
+  }
+
+  .team-container {
+    padding: 40px;
+  }
+
+  .industries-header.top h1 {
+    width: 80%;
+    color: var(--Text-Black-text-black-300, #606060);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .resource-engagement {
+    padding: 40px 40px 0;
+    gap: 40px;
+  }
+
+  .resource-card p {
+    width: 80%;
+  }
+
+  .resource-card h1 {
+    color: var(--Text-Black-Primary, #111);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+
+  .resource-card {
+    gap: 20px;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .top.resource {
+    gap: 24px;
+  }
+
+  .industries-header.top p {
+    color: var(--Maroon-Primary, #621A0C);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+  }
+
+  .card-main {
+    flex-direction: column;
+  }
+
+  .industries-header h1 {
+    width: 100%;
+    color: var(--Text-Black-Primary, #111);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
+
+  .top,
+  .mid,
+  .btm {
+    flex-direction: column;
+  }
+
+  .industry-card.hide {
+    display: none;
+  }
+
+  .industry-card {
+    width: 100%;
+  }
+
+  .industries {
+    padding: 40px;
+    gap: 24px;
+  }
+
+  .footer-cover {
+    padding: 48px 40px;
+  }
+
+  .footer-main {
+    padding: 40px 20px
+  }
+
+  .footer-tab-right {
+    gap: 48px;
+  }
+
+  .address-cover {
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .address-main {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .mail-us,
+  .visit-us,
+  .call-us {
+
+    width: 100%;
+  }
+
+  .contact-form {
+    display: flex;
+    padding: 40px 40px 48px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .inquire-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .inquire-content h1 {
+    color: #111;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .inquire-content p {
+    color: #606060;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    width: 50%;
+  }
+
+  .inquire-main {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .inquire-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .inquire-main {
+    height: 100vh;
+  }
+
+  .inquire-content h1 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .nav-main {
+    padding: 40px;
+  }
+
+  .banner-heading h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.68px;
+  }
+
+  .banner-heading p {
+    color: var(--Grey-grey-100, #D6D6D6);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    width: 80%;
+  }
+
+  .contact-serivice-btn {
+    gap: 16px;
+  }
+
+  .banner-wrapper {
+    padding: 80px 40px 0px 40px;
+  }
+
+  .banner-container {
+    padding: 140px 40px 0px 40px;
+  }
+
+  .contact-us-btn.light {
+    color: var(--Maroon-Primary, #621A0C);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    padding: 10px 20px;
+  }
+
+  .contact-us-btn.brown {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .banner-heading h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.68px;
+  }
+
+  .banner-heading p {
+    color: var(--Grey-grey-100, #D6D6D6);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+    width: 80%;
+  }
+
+  .contact-serivice-btn {
+    gap: 16px;
+  }
+
+  .banner-wrapper {
+    padding: 80px 40px 0px 40px;
+  }
+
+  .banner-container {
+    padding: 140px 40px 0px 40px;
+  }
+
+  .contact-us-btn.light {
+    color: var(--Maroon-Primary, #621A0C);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    padding: 10px 20px;
+  }
+
+  .contact-us-btn.brown {
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    padding: 10px 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-wrapper {
     padding: 20px 12px 20px 12px;
@@ -1312,330 +1689,5 @@ textarea {
 
   .inquire-content p {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .industries-header.choose h1 {
-    width: 100%;
-  }
-
-  .values-title-cards,
-  .values-container {
-    gap: 24px;
-  }
-
-
-  .industries-header.top.values h1 {
-    width: 100%;
-  }
-
-  .values-title {
-    color: var(--Maroon-Primary, #621A0C);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.32px;
-  }
-
-  .values-content {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .aboutUs {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-  }
-
-  .card-main {
-    gap: 24px;
-  }
-
-  .our-services-main {
-    padding: 40px;
-  }
-
-  .industry-card img {
-    height: 306px;
-  }
-
-  .mid.industry {
-    gap: 24px;
-  }
-
-  .industries-container,
-  .top.chooseUs {
-    gap: 24px;
-  }
-
-  .industry-card p {
-    color: var(--Text-Black-Primary, #111);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.4px;
-  }
-
-  .industry-card.chooseUs {
-    width: 100%;
-  }
-
-  .industries-header.choose p {
-    color: var(--Text-Black-text-black-300, #606060);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
-    width: 100%;
-  }
-
-  .team-container {
-    padding: 40px;
-  }
-
-  .industries-header.top h1 {
-    width: 80%;
-    color: var(--Text-Black-text-black-300, #606060);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.28px;
-  }
-
-  .resource-engagement {
-    padding: 40px 40px 0;
-    gap: 40px;
-  }
-
-  .resource-card p {
-    width: 80%;
-  }
-
-  .resource-card h1 {
-    color: var(--Text-Black-Primary, #111);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.4px;
-  }
-
-  .resource-card {
-    gap: 20px;
-    min-height: auto;
-    padding: 16px;
-  }
-
-  .top.resource {
-    gap: 24px;
-  }
-
-  .industries-header.top p {
-    color: var(--Maroon-Primary, #621A0C);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    text-transform: uppercase;
-  }
-
-  .card-main {
-    flex-direction: column;
-  }
-
-  .industries-header h1 {
-    width: 100%;
-    color: var(--Text-Black-Primary, #111);
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -1.28px;
-  }
-
-  .top,
-  .mid,
-  .btm {
-    flex-direction: column;
-  }
-
-  .industry-card.hide {
-    display: none;
-  }
-
-  .industry-card {
-    width: 100%;
-  }
-
-  .industries {
-    padding: 40px;
-    gap: 24px;
-  }
-
-  .footer-cover {
-    padding: 48px 40px;
-  }
-
-  .footer-main {
-    padding: 40px 20px
-  }
-
-  .footer-tab-right {
-    gap: 48px;
-  }
-
-  .address-cover {
-    padding: 40px;
-    flex-direction: column;
-  }
-
-  .address-main {
-    gap: 40px;
-    flex-direction: column;
-  }
-
-  .mail-us,
-  .visit-us,
-  .call-us {
-
-    width: 100%;
-  }
-
-  .contact-form {
-    display: flex;
-    padding: 40px 40px 48px 40px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    align-self: stretch;
-  }
-
-  .inquire-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .inquire-content h1 {
-    color: #111;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .inquire-content p {
-    color: #606060;
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.48px;
-    width: 50%;
-  }
-
-  .inquire-main {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .inquire-image {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .inquire-main {
-    height: 100vh;
-  }
-
-  .inquire-content h1 {
-    font-size: 40px;
-    letter-spacing: -1.2px;
-  }
-
-
-
-  .nav-main {
-    padding: 40px;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .banner-heading h1 {
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -1.68px;
-  }
-
-  .banner-heading p {
-    color: var(--Grey-grey-100, #D6D6D6);
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    width: 80%;
-  }
-
-  .contact-serivice-btn {
-    gap: 16px;
-  }
-
-  .banner-wrapper {
-    padding: 80px 40px 0px 40px;
-  }
-
-  .banner-container {
-    padding: 140px 40px 0px 40px;
-  }
-
-  .contact-us-btn.light {
-    color: var(--Maroon-Primary, #621A0C);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.32px;
-    padding: 10px 20px;
-  }
-
-  .contact-us-btn.brown {
-    color: var(--White, #FFF);
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.32px;
-    padding: 10px 20px;
   }
 }
