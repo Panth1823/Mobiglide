@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import Lines from "../assets/Banner.png"
+import Lines from "../assets/Banner.webp"
 const ContactUs = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const ContactUs = () => {
             <p>Contact us with your questions or project needs. Complete the form below, and we'll get back to you promptly.</p>
           </div>
         </div>
-        <img src={Lines} alt="Decorative Lines Pattern" className="inquire-image" />
+        <img src={Lines} alt="Decorative lines pattern" className="inquire-image" />
       </div>
       <div className="contact-form">
         <div className="form-container">

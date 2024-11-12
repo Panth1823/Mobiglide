@@ -1,17 +1,95 @@
+// import React, { useEffect } from "react";
+// import { Link } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
+// import Footer from "./Footer";
+// import Banner from "../assets/Section.jpg";
+// import Team from "../assets/Team.png";
+// 
+// import Services from "../assets/Services.webp";
+
+// const Home = () => {
+//   const location = useLocation();
+
+//   const scrollToSection = (sectionId) => {
+//     const element = document.getElementById(sectionId);
+//     if (element) {
+//       element.scrollIntoView({ behavior: 'smooth' });
+//     }
+//   };
+
+//   useEffect(() => {
+//     if (location.state?.scrollTo) {
+//       const element = document.getElementById(location.state.scrollTo);
+//       if (element) {
+//         setTimeout(() => {
+//           element.scrollIntoView({ behavior: 'smooth' });
+//         }, 100);
+//       }
+//     }
+//   }, [location]);
+
+//   return (
+//     <>
+//       <div className="banner-wrapper">
+//         <div className="banner-container">
+//           <div className="solutions-heading">
+//             <p>Efficient Solutions, Excellence in Action</p>
+//           </div>
+//           <div className="banner-heading">
+//             <div className="banner-heading-content">
+//               <h1>Innovative Solutions, Quality Services, Passionate People.</h1>
+//               <p>
+//                 At Mobiglide, we believe in building solutions that deliver
+//                 value, streamline processes, and drive tangible returns on
+//                 investment. Quality and excellence are at the heart of
+//                 everything we do.
+//               </p>
+//             </div>
+//             <div className="contact-serivice-btn">
+//               <Link to="/contact" className="contact-us-btn light">
+//                 Contact Us
+//               </Link>
+//               <div
+//                 onClick={() => scrollToSection('services')}
+//                 className="contact-us-btn brown"
+//                 style={{ cursor: 'pointer' }}
+//               >
+//                 Our Service
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <img src={Banner} alt="Mobiglide Banner showcasing innovative solutions" width="1200" height="533" loading="lazy" />
+//       </div>
+//       <div className="team-container">
+//
+//       </div>
+//       <div className="services-container">
+//         <img src={Services} alt="Overview of IT Services" width="1200" height="800" loading="lazy" />
+//       </div>
+//       <Footer/>
+//     </>
+//   );
+// };
+
+// export default Home;
+
 import React, { useEffect } from "react";
 import Footer from "./Footer";
-import One from "../assets/1.png";
-import Two from "../assets/2.png";
-import Three from "../assets/3.png";
-import Four from "../assets/4.png";
-import Five from "../assets/5.png";
-import Six from "../assets/6.png";
-import Seven from "../assets/7.png";
-import Eight from "../assets/8.png";
+import One from "../assets/1.webp";
+import Two from "../assets/2.webp";
+import Three from "../assets/3.webp";
+import Four from "../assets/4.webp";
+import Five from "../assets/5.webp";
+import Six from "../assets/6.webp";
+import Seven from "../assets/7.webp";
+import Eight from "../assets/8.webp";
 import Team from "../assets/Team.png";
 import Services from "../assets/Services.png";
 import Cards from "../assets/Cards.png";
+import CardsResponsive from "../assets/CardsResponsive.png";
 import Banner from "../assets/Section.jpg";
+import TeamResponsive from "../assets/TeamResponsive.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -21,7 +99,7 @@ const Home = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -32,7 +110,7 @@ const Home = () => {
       if (element) {
         // Add a small delay to ensure the page is loaded
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
     }
@@ -61,10 +139,10 @@ const Home = () => {
               <Link to="/contact" className="contact-us-btn light">
                 Contact Us
               </Link>
-              <div 
-                onClick={() => scrollToSection('services')} 
+              <div
+                onClick={() => scrollToSection("services")}
                 className="contact-us-btn brown"
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: "pointer" }}
               >
                 Our Service
               </div>
@@ -103,7 +181,9 @@ const Home = () => {
             <div className="values-title">OUR CORE VALUES:</div>
 
             <div className="values-cards-container">
-              <img src={Cards} alt="Core Values Cards" />
+              <img src={Cards} alt="Core Values Cards" className="cards"/>
+              <img src={CardsResponsive} alt="Core Values Cards"  className="cards-responsive"/>
+
             </div>
           </div>
           <div className="values-content">
@@ -362,7 +442,18 @@ const Home = () => {
         </div>
       </div>
       <div className="team-container">
-        <img src={Team} alt="Mobiglide Team Members" />
+        <img
+          src={Team}
+          alt="Mobiglide Team Members"
+          className="Team-image"
+          loading="lazy"
+        />
+        <img
+          src={TeamResponsive}
+          alt="Mobiglide Team Members Responsive"
+          className="Team-image-hide"
+          loading="lazy"
+        />
       </div>
       <div className="resource-engagement">
         <div className="industries-header">
@@ -510,8 +601,8 @@ const Home = () => {
               <div className="resource-content">
                 <h1>Permanent Placement</h1>
                 <p>
-                  Finding and placing the right professionals who can grow
-                  with your team.
+                  Finding and placing the right professionals who can grow with
+                  your team.
                 </p>
               </div>
             </div>
@@ -528,8 +619,17 @@ const Home = () => {
           <div className="card-main">
             <div className="resource-card">
               <div className="resouce-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
-                  <path d="M30 30.9492H22V4.94922H30V30.9492ZM20 30.9492H12V12.9492H20V30.9492ZM10 30.9492H2V18.9492H10V30.9492Z" fill="#621A0C" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
+                  <path
+                    d="M30 30.9492H22V4.94922H30V30.9492ZM20 30.9492H12V12.9492H20V30.9492ZM10 30.9492H2V18.9492H10V30.9492Z"
+                    fill="#621A0C"
+                  />
                 </svg>
               </div>
               <div className="resource-content">
@@ -676,6 +776,10 @@ const Home = () => {
               <p>E-Governance</p>
             </div>
             <div className="industry-card">
+              <img src={Eight} alt="Telecom Industry" />
+              <p>Telecom</p>
+            </div>
+            <div className="industry-card hide">
               <img src={Eight} alt="Telecom Industry" />
               <p>Telecom</p>
             </div>
