@@ -1430,12 +1430,37 @@ textarea {
     letter-spacing: -1.2px;
   }
 
+
+
   .nav-main {
     padding: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .career-contact-content {
+    gap: 10px;
+  }
+
+  .career-contactUs h1,
+  .career-joinUs h1 {
+    font-size: 15px;
+  }
+
+  .career-contactUs p,
+  .career-joinUs p {
+    font-size: 13px;
+  }
+
+  .contact-us-btn.sec {
+    width: 30%;
+    font-size: 12px;
+  }
+
+  .career-contact-cover {
+    gap: 20px;
+  }
+
   .banner-wrapper {
     padding: 20px 12px 20px 12px;
   }

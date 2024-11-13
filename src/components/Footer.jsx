@@ -6,16 +6,12 @@ const Footer = () => {
   const location = useLocation();
 
   const scrollToSection = (sectionId) => {
-    if (sectionId === 'top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
     } else {
-      if (location.pathname !== "/") {
-        navigate("/", { state: { scrollTo: sectionId } });
-      } else {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -26,7 +22,7 @@ const Footer = () => {
         <div className="footer-main">
           <div className="footer-socials-tabs">
             <div className="footer-tab-left">
-              <div className="mobiglide-text" onClick={() => scrollToSection('top')} style={{ cursor: 'pointer' }}>
+              <div className="mobiglide-text">
                 <p>Mobiglide.</p>
               </div>
               <div className="socials-logos">
