@@ -210,18 +210,23 @@
   letter-spacing: -0.32px;
   cursor: pointer;
 }
-.about-us-footer-tab:hover{
+
+.about-us-footer-tab:hover {
   color: white;
 }
-.services-footer-tab:hover{
+
+.services-footer-tab:hover {
   color: white;
 }
-.careers-footer-tab:hover{
+
+.careers-footer-tab:hover {
   color: white;
 }
-.contact-footer-tab:hover{
+
+.contact-footer-tab:hover {
   color: white;
 }
+
 .horizontal-line {
   width: 100%;
   height: 1px;
@@ -1122,24 +1127,29 @@ textarea {
     letter-spacing: -0.32px;
     padding: 10px 20px;
   }
-  .contact-us-btn.sec{
+
+  .contact-us-btn.sec {
     padding: 10px;
     width: 40%;
   }
-  .career-contact-cover{
+
+  .career-contact-cover {
     gap: 20px;
   }
-  .career-contactUs h1, .career-joinUs h1{
+
+  .career-contactUs h1,
+  .career-joinUs h1 {
     font-size: 20px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .career-contact-content{
+  .career-contact-content {
     gap: 20px;
   }
-  .career-contact-cover{
+
+  .career-contact-cover {
     gap: 50px;
     padding: 50px 20px 20px;
     width: 100%;
@@ -1148,21 +1158,25 @@ textarea {
     align-items: center;
   }
 
-  .career-contactUs img{
+  .career-contactUs img {
     height: 50%;
-    
+
   }
-  .career-contactUs{
+
+  .career-contactUs {
     width: 100%;
   }
-  .contact-us-btn.sec{
+
+  .contact-us-btn.sec {
     padding: 10px;
     width: 20%;
   }
-  .career{
+
+  .career {
     padding: 40px 48px;
     flex-direction: column;
   }
+
   .banner-heading h1 {
     font-size: 20px;
   }
@@ -1415,8 +1429,6 @@ textarea {
     font-size: 40px;
     letter-spacing: -1.2px;
   }
-
-
 
   .nav-main {
     padding: 40px;
@@ -1760,12 +1772,14 @@ textarea {
     line-height: normal;
     letter-spacing: -0.36px;
   }
-  .contact-us-btn.sec{
+
+  .contact-us-btn.sec {
     align-self: center;
     color: white;
     background: linear-gradient(90deg, #59180b 0%, #220904 100%);
   }
-  .contact-us-btn.sec:hover{
+
+  .contact-us-btn.sec:hover {
     background: var(--Maroon-Primary, #621a0c);
   }
 

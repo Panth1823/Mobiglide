@@ -2,8 +2,6 @@ import React from "react";
 import Footer from "./Footer";
 import Lines from "../assets/Banner.webp";
 import LinesHide from "../assets/LinesOne.jpeg";
-import Contactus from "../assets/ContactUs.png";
-import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
