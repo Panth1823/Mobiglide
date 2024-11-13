@@ -113,7 +113,13 @@ const Footer = () => {
               >
                 Services
               </div>
-              <div className="careers-footer-tab">Careers</div>
+              <div
+                className="careers-footer-tab"
+                onClick={() => scrollToSection("career")}
+                style={{ cursor: "pointer" }}
+              >
+                Careers
+              </div>
               <Link
                 to="/contact"
                 className="contact-footer-tab"
@@ -127,7 +133,14 @@ const Footer = () => {
             <div className="horizontal-line"></div>
             <div className="rights-text-main">
               <div>2024 All rights reserved</div>
-              <div>Crafted by The Koios Studio</div>
+              <a
+                href="https://koiosengg.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
+                <div>Crafted by The Koios Studio</div>
+              </a>
             </div>
           </div>
         </div>

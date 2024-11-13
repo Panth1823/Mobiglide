@@ -78,6 +78,13 @@
   background: var(--Maroon-Primary, #621a0c);
 }
 
+.contact-us-btn.sec {
+  width: 30%;
+  height: 48px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
 .contact-us-btn.light {
   background: #fff;
   color: var(--Maroon-Primary, #621a0c);
@@ -203,7 +210,18 @@
   letter-spacing: -0.32px;
   cursor: pointer;
 }
-
+.about-us-footer-tab:hover{
+  color: white;
+}
+.services-footer-tab:hover{
+  color: white;
+}
+.careers-footer-tab:hover{
+  color: white;
+}
+.contact-footer-tab:hover{
+  color: white;
+}
 .horizontal-line {
   width: 100%;
   height: 1px;
@@ -977,6 +995,76 @@ textarea {
   height: auto;
 }
 
+.career {
+  display: flex;
+  padding: 80px 160px;
+  align-items: center;
+  gap: 40px;
+}
+
+.career-contact-cover {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.career-contactUs,
+.career-joinUs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.career-contactUs h1,
+.career-joinUs h1 {
+  color: var(--Maroon-maroon-700, #461209);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 60%;
+}
+
+.career-contactUs p,
+.career-joinUs p {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.career-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.career-contactUs {
+  position: relative;
+}
+
+.career-contactUs img {
+  border-radius: 16px;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+.career-contact-cover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  padding: 24px;
+  height: 100%;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1240px) {
   .banner-heading h1 {
     color: #FFF;
@@ -1034,9 +1122,47 @@ textarea {
     letter-spacing: -0.32px;
     padding: 10px 20px;
   }
+  .contact-us-btn.sec{
+    padding: 10px;
+    width: 40%;
+  }
+  .career-contact-cover{
+    gap: 20px;
+  }
+  .career-contactUs h1, .career-joinUs h1{
+    font-size: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .career-contact-content{
+    gap: 20px;
+  }
+  .career-contact-cover{
+    gap: 50px;
+    padding: 50px 20px 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .career-contactUs img{
+    height: 50%;
+    
+  }
+  .career-contactUs{
+    width: 100%;
+  }
+  .contact-us-btn.sec{
+    padding: 10px;
+    width: 20%;
+  }
+  .career{
+    padding: 40px 48px;
+    flex-direction: column;
+  }
   .banner-heading h1 {
     font-size: 20px;
   }
@@ -1633,6 +1759,14 @@ textarea {
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.36px;
+  }
+  .contact-us-btn.sec{
+    align-self: center;
+    color: white;
+    background: linear-gradient(90deg, #59180b 0%, #220904 100%);
+  }
+  .contact-us-btn.sec:hover{
+    background: var(--Maroon-Primary, #621a0c);
   }
 
   .tabs {

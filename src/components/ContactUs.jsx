@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "./Footer";
 import Lines from "../assets/Banner.webp";
 import LinesHide from "../assets/LinesOne.jpeg";
+import Contactus from "../assets/ContactUs.png";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -134,7 +136,6 @@ const ContactUs = () => {
             </p>
           </div>
           <div className="call-us">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

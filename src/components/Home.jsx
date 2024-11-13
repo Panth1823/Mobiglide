@@ -14,6 +14,8 @@ import Cards from "../assets/Cards.png";
 import CardsResponsive from "../assets/CardsResponsive.png";
 import Banner from "../assets/Section.jpg";
 import TeamResponsive from "../assets/TeamResponsive.png";
+import Careers from "../assets/Careers.png"
+import Contact from "../assets/ContactUs.png"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -726,6 +728,34 @@ const Home = () => {
               <img src={Eight} alt="Telecom Industry" loading="lazy" />
               <p>Telecom</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="career">
+        <div className="career-contactUs">
+          <img src={Contact} alt="" />
+          <div className="career-contact-cover">
+
+            <div className="career-contact-content">
+
+              <h1>Reach Out to Us & We Will Help you!</h1>
+              <p>Get in Touch – We're Here to Help!</p>
+            </div>
+            <Link to="/contact" className="contact-us-btn sec">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+        <div className="career-contactUs">
+          <img src={Careers} alt="" />
+          <div className="career-contact-cover">
+            <div className="career-contact-content">
+              <h1>Apply Now & Grow With Us!</h1>
+              <p>Send your resume here - hrteam@mobiglide.in</p>
+            </div>
+            <Link to="/contact" className="contact-us-btn sec">
+              Join Us
+            </Link>
           </div>
         </div>
       </div>
