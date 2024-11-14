@@ -753,9 +753,9 @@ const Home = () => {
               <h1>Apply Now & Grow With Us!</h1>
               <p>Send your resume here - hrteam@mobiglide.in</p>
             </div>
-            <Link to="/contact" className="contact-us-btn sec">
+            <a href="mailto:hrteam@mobiglide.in" className="contact-us-btn sec">
               Join Us
-            </Link>
+            </a>
           </div>
         </div>
       </div>
