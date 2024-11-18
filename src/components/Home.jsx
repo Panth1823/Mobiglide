@@ -21,6 +21,7 @@ import { useLocation } from "react-router-dom";
 import Lead from "../assets/whychooseus/lead times mobiglide-min.webp"
 import Recruitment from "../assets/whychooseus/recruitment mobilglide-min.webp"
 import Professionals from "../assets/whychooseus/trained professionals mobiglide-min.webp"
+import Management from "../assets/whychooseus/client management.webp"
 
 const Home = () => {
   const location = useLocation();
@@ -376,7 +377,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="industry-card chooseUs">
-                <img src={Five} alt="Dedicated Client Management" loading="lazy" />
+                <img src={Management} alt="Dedicated Client Management" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Dedicated Client Management</p>
                   <h1>
