@@ -18,6 +18,9 @@ import Careers from "../assets/Careers.png"
 import Contact from "../assets/ContactUs.png"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import Lead from "../assets/whychooseus/lead times mobiglide-min.webp"
+import Recruitment from "../assets/whychooseus/recruitment mobilglide-min.webp"
+import Professionals from "../assets/whychooseus/trained professionals mobiglide-min.webp"
 
 const Home = () => {
   const location = useLocation();
@@ -338,8 +341,8 @@ const Home = () => {
             <div className="top chooseUs">
               <div className="industry-card chooseUs">
                 <img
-                  src={One}
-                  alt="Banking and Financial Services"
+                  src={Professionals}
+                  alt="Skilled Resources"
                   loading="lazy"
                 />
                 <div className="chooseUs-content">
@@ -351,7 +354,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="industry-card chooseUs">
-                <img src={Two} alt="Healthcare Services" loading="lazy" />
+                <img src={Recruitment} alt="Proven Recruitment Process" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Proven Recruitment Process</p>
                   <h1>
@@ -363,7 +366,7 @@ const Home = () => {
             </div>
             <div className="mid">
               <div className="industry-card chooseUs">
-                <img src={Four} alt="Manufacturing Industry" loading="lazy" />
+                <img src={Lead} alt="Industry-Leading Deployment Times" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Industry-Leading Deployment Times</p>
                   <h1>
@@ -373,7 +376,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="industry-card chooseUs">
-                <img src={Five} alt="Retail Industry" loading="lazy" />
+                <img src={Five} alt="Dedicated Client Management" loading="lazy" />
                 <div className="chooseUs-content">
                   <p>Dedicated Client Management</p>
                   <h1>
